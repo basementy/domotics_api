@@ -1,0 +1,25 @@
+{
+  "name": "domotics_api",
+  "description": "Repositório dedicado a API do projeto de domótica, integrando Arduino atavés de Ethernet Shield para realizar requisições ao servidor.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biewxw/domotics_api.git"
+  },
+  "author": "Gabriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biewxw/domotics_api/issues"
+  },
+  "homepage": "https://github.com/biewxw/domotics_api#readme"
+}
