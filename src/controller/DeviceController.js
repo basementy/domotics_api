@@ -25,13 +25,13 @@ module.exports = {
 
   // Atualiza status do device
   async update(req, res) {
-    const { id } = req.params;
-    const device = await Device.findOne({_id: id})
+    const { device_name } = req.params;
+    const device = await Device.findOne({name: device_name})
 
     device.status = !device.status
     await device.save()
 
-    const doc = await Device.findOne({_id: id})
+    const doc = await Device.findOne({name: device_name})
     return res.json(doc) 
   }
 };
