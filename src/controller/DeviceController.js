@@ -1,30 +1,37 @@
-const Device = require('../models/Device')
+const Device = require("../models/Device");
 
 module.exports = {
   // Retorna o JSON do device
   async index(req, res) {
-    const { device_name } = req.params
+    const { device_name } = req.params;
 
-    const device = await Device.find({ name: device_name })
+    const device = await Device.find({ name: device_name });
 
-    return res.json(device)
+    return res.json(device);
   },
 
   // Cria um novo device
   async store(req, res) {
-    const { name, status } = req.body
+    const { name, status } = req.body;
 
-    let device = await Device.findOne({ name })
+    let device = await Device.findOne({ name });
 
-    if(!device) {
-      device = await Device.create({ name, status })
+    if (!device) {
+      device = await Device.create({ name, status });
     }
 
-    return res.json(device)
+    return res.json(device);
   },
 
   // Atualiza status do device
   async update(req, res) {
-    // Code
+    const { id } = req.params;
+    const device = await Device.findOne({_id: id})
+
+    device.status = !device.status
+    await device.save()
+
+    const doc = await Device.findOne({_id: id})
+    return res.json(doc) 
   }
-}
+};
