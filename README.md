@@ -17,10 +17,6 @@
 
 > Repositório dedicado a API do projeto de domótica, integrando Arduino atavés de Ethernet Shield para realizar requisições ao servidor.
 
-### 🏠 [Homepage](https://github.com/biewxw/domotics_api#readme)
-
-### ✨ [Demo](https://api-domotics.herokuapp.com/)
-
 ## Install
 
 ```sh
