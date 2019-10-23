@@ -5,7 +5,7 @@ module.exports = {
   async index(req, res) {
     const { device_name } = req.params;
 
-    const device = await Device.find({ name: device_name });
+    const device = await Device.findOne({ name: device_name });
 
     return res.json(device);
   },
