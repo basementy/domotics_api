@@ -6,7 +6,6 @@ Para iniciar o projeto você deve primeiro instalar todas as dependências
 
 ```
 yarn
-
 ```
 
 ou
