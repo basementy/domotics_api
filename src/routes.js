@@ -5,6 +5,6 @@ const DeviceController = require('./controller/DeviceController')
 
 routes.get('/device/:device_name', DeviceController.index)
 routes.post('/device', DeviceController.store)
-routes.put('/device/:device_name', DeviceController.update)
+routes.put('/device/:id', DeviceController.update)
 
 module.exports = routes
