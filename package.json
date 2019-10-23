@@ -2,11 +2,11 @@
   "name": "domotics_api",
   "description": "Repositório dedicado a API do projeto de domótica, integrando Arduino atavés de Ethernet Shield para realizar requisições ao servidor.",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node ./src/server.js",
-    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
