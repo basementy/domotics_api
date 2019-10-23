@@ -14,7 +14,7 @@ ou
 npm install
 ```
 
-Após instalado, rode o servidor localmente
+Após instalado, rode o servidor localmente em modo de desenvolvimento
 
 ```
 yarn dev
